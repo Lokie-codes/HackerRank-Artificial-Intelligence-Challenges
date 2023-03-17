@@ -9,13 +9,13 @@ def nextMove(n,r,c,grid):
             # print(f"Location of Bot      : ({mx}, {my})")
         # for cell in row:
         #     print(cell)
-    if mx < px:             # bot is behind the princess
+    if mx < px:                 # bot is behind the princess
         return "RIGHT"
-    elif mx > px:           # bot is in front of princess
+    elif mx > px:               # bot is in front of princess
         return "LEFT"
-    elif my < py:             # bot is below the princess
+    elif my < py:               # bot is below the princess
         return "DOWN"
-    else:           # bot is above the princess
+    else:                       # bot is above the princess
         return "UP"
     return ""
 
